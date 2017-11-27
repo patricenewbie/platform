@@ -1,0 +1,40 @@
+{# src/OC/PlatformBundle/Resources/view/Advert/view.html.twig #}
+
+
+{# On vérifie qu'une image soit bien associée à l'annonce #}
+
+{% if advert.titre is not null %}
+    <p>
+         {{ advert.titre }}
+    </p>
+{% endif %}
+
+{% if advert.author is not null %}
+    <p>
+        {{ advert.author }}
+    </p>
+{% endif %}
+
+
+{% if advert.content is not null %}
+    <p>
+        {{ advert.content }}
+    </p>
+{% endif %}
+
+
+
+
+{% if application1  is not null %}
+    <p>
+        {{ application1.author }} &nbsp;  {{ application1.content }}
+    </p>
+{% endif %}
+
+{% if application2  is not null %}
+    <p>
+        {{ application2.author }} &nbsp;  {{ application2.content }}
+    </p>
+{% endif %}
+
+

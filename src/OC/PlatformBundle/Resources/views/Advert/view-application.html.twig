@@ -1,0 +1,23 @@
+
+Candidatures
+{% if advert is not null %}
+    <p>
+        {{ advert.titre }}
+    </p>
+    <p>
+        {{ advert.author }}
+    </p>
+
+{% endif %}
+
+
+<p>
+    Candidatures correspondant à cette annonce
+</p>
+{% if listApplications  is not null %}
+    <p>
+        {{ applications.author }} &nbsp;  {{ applications.content }}
+    </p>
+{% endif %}
+
+

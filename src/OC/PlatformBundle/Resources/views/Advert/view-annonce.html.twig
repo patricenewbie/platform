@@ -1,0 +1,15 @@
+{% if not advert.categories.empty %}
+
+    <p>
+
+       L' annonce no {{ advert.id }} est parue dans les catégories suivantes :
+
+        {% for category in advert.categories %}
+
+            {{ category.name }}{% if not loop.last %}, {% endif %}
+
+        {% endfor %}
+
+    </p>
+
+{% endif %}
